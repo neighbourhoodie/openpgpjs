@@ -7,14 +7,15 @@ Maintainers, old and new, are encouraged to read and refer back to this guide wh
 **Project processes**
 - [Issue Triage](#issue-triage)
   - [Step 1: Type the Issue](#step-1-type-the-issue)
-    - [Support Request -\> `support`](#support-request---support)
-    - [Wrong Place -\> `wontfix`](#wrong-place---wontfix)
-    - [Needs More Info -\> `need-more-info`](#needs-more-info---need-more-info)
-    - [Abandoned/Stale -\> `stale`](#abandonedstale---stale)
-    - [Bugs -\> `bug`](#bugs---bug)
+    - [`Support` for support requests](#support-for-support-requests)
+    - [`Wontfix` for misplaced or irrelevant issues](#wontfix-for-misplaced-or-irrelevant-issues)
+    - [`Need more info` for incomplete issues](#need-more-info-for-incomplete-issues)
+    - [`Stale` for abandoned issues](#stale-for-abandoned-issues)
+    - [`Bug` for things that don’t work as intended](#bug-for-things-that-dont-work-as-intended)
     - [Good First Issues and Help Wanted Issues](#good-first-issues-and-help-wanted-issues)
-      - [Criteria for Help Wanted Issues](#criteria-for-help-wanted-issues)
-      - [Criteria for Good First Issues](#criteria-for-good-first-issues)
+      - [Criteria for a `Help wanted` Issue](#criteria-for-a-help-wanted-issue)
+      - [Criteria for a `Good first issue`](#criteria-for-a-good-first-issue)
+    - [Other Issue Types](#other-issue-types)
   - [Step 2: Prioritize the Issue](#step-2-prioritize-the-issue)
     - [`priority/critical-urgent`](#prioritycritical-urgent)
     - [`priority/important-soon`](#priorityimportant-soon)
@@ -46,13 +47,13 @@ Triage can happen asynchronously and continuously, or in regularly scheduled mee
 - Prevents issues and the project itself becoming stale
 - Provides structure and an opportunity for collaborative decision-making with regards to the project trajectory and roadmap
 
-It can be beneficial to have triage be part of already existing regular meetings, and if the volume of incoming issues requires it, have a regular, public triage meeting. If there is a regular meeting, make sure it is added here and in the `CONTRIBUTING.md`. Also consider adding it to the `NEW-CONTRIBUTORS.md` and explicitly invite new and prospective contributors to listen in or participate. This will give interested people a plannable, social opportunity to meet the maintainers and gain insight into the project, with both a low barrier to entry for the new contributors and a low amount of additional effort for the maintainers.
+It can be beneficial to have triage be part of already existing regular meetings, and if the volume of incoming issues requires it, have a regular, public triage meeting. If there is a regular meeting, make sure it is added here and in the [CONTRIBUTING.md](/CONTRIBUTING.md). Also consider adding it to the [NEW-CONTRIBUTORS.md](/NEW-CONTRIBUTORS.MD) and explicitly invite new and prospective contributors to listen in or participate. This will give interested people a plannable, social opportunity to meet the maintainers and gain insight into the project, with both a low barrier to entry for the new contributors and a low amount of additional effort for the maintainers.
 
 ### Step 1: Type the Issue
 
 Issues can be of various types, some of which have labels:
 
-#### Support Request -> `support`
+#### `Support` for support requests
 
 Support requests, eg. issues that are not bugs and exclusively concern the usage of the code as it is, will be converted in to a discussion and closed.
 
@@ -64,41 +65,41 @@ If you realise that the question is a duplicate of an existing discussion, and y
 
 If questions are frequently asked, they might be a frequently asked question! Consider adding the solution to the documentation, Wiki or FAQ, whichever applies and is easily discoverable.
 
-#### Wrong Place -> `wontfix`
+#### `Wontfix` for misplaced or irrelevant issues
 
 These are issues that pertain to other projects but have landed here, usually because the poster has no insight into the source of the issue, and the source is actually a dependency.
 
 If you can, close the issue with a comment that points the poster to the correct repo.
 
-#### Needs More Info -> `need-more-info`
+#### `Need more info` for incomplete issues
 
-These are issues that seem worthwhile, but are not yet actionable. Give it the `need-more-info` label and prod the author for that info.
+These are issues that seem worthwhile, but are not yet actionable. Give it the `Need more info` label and prod the author for that info.
 
-#### Abandoned/Stale -> `stale`
+#### `Stale` for abandoned issues
 
-These are usually `need-more-info` issues where the original author does not respond within a sensible time frame (say, a month. People are busy). These are good candidates for a Github bot to manage for you.
+These are usually `Need more info` issues where the original author does not respond within a sensible time frame (say, a month. People are busy). These are good candidates for a Github bot to manage for you.
 
 Here’s [an example](https://github.com/openpgpjs/openpgpjs/issues/883) of an issue that was manually closed after the author not responding for a year.
 
-#### Bugs -> `bug`
+#### `Bug` for things that don’t work as intended
 
-1. Assuming this is not or no longer a `need-more-info` issue, attempt to reproduce the bug
+1. Assuming this is not or no longer a `Need more info` issue, attempt to reproduce the bug
    1. Search for duplicates, if one exists, point the current issue there, and close the new one
-   2. If you can reproduce it and there are no duplicates, prioritize it and add the `bug` label
-      1. If you need more info before this issue becomes actionable despite being able to reproduce it, prod the author and add a `need-more-info` label
-   3. If you can’t reproduce it, contact the author with the reason, and add a `need-more-info` to the `bug` label
+   2. If you can reproduce it and there are no duplicates, prioritize it and add the `Bug` label
+      1. If you need more info before this issue becomes actionable despite being able to reproduce it, prod the author and add a `Need more info` label
+   3. If you can’t reproduce it, contact the author with the reason, and add a `Need more info` to the `Bug` label
       1. If the issue cannot be reproduced by anyone other than the author, agree with them that the issue should be closed
 
-As with regular `need-more-info` issues, `need-more-info bug` issues are also subject to the [Abandoned/Stale](#abandonedstale) rule above, and should be closed after a set period of time.
+As with regular `Need more info` issues, `Need more info` + `Bug` issues are also subject to the [Abandoned/Stale](#abandonedstale) rule above, and should be closed after a set period of time.
 
 #### Good First Issues and Help Wanted Issues
 
-To identify issues that are specifically groomed for new contributors, we use the `help wanted` _and_ `good first issue` labels. As to the difference between the two:
+To identify issues that are specifically groomed for new contributors, we use the `Help wanted` _and_ `Good first issue` labels. As to the difference between the two:
 
-- a `good first issue` always also implies `help wanted` from outside the project
-- but `help wanted` does not necessarily mean it’s a `good first issue`. Might be really tricky but none of the current maintainers has the resources or expertise to tackle it
+- a `Good first issue` always also implies `Help wanted` from outside the project
+- but `Help wanted` does not necessarily mean it’s a `Good first issue`. Might be really tricky but none of the current maintainers has the resources to tackle it
 
-##### Criteria for Help Wanted Issues
+##### Criteria for a `Help wanted` Issue
 
 - **Low Barrier to Entry:** It should be easy for new contributors. Documentation on how that type of change should be made should already exist.
 
@@ -108,15 +109,15 @@ To identify issues that are specifically groomed for new contributors, we use th
 
 - **Up-To-Date:** Often these issues become obsolete and have already been completed, are no longer desired, no longer make sense, or have changed priority or difficulty.
 
-##### Criteria for Good First Issues
+##### Criteria for a `Good first issue`
 
-Items marked with the `good first issue` label are intended for first-time contributors. It indicates that maintainers will _proactively_ keep an eye out for the corresponding pull requests and shepherd them along.
+Items marked with the `Good first issue` label are intended for first-time contributors. It indicates that maintainers will _proactively_ keep an eye out for the corresponding pull requests and shepherd them along.
 
 New contributors should not be left to find an approver, ping for reviews, or identify that their build failed due to a flake. It is important to make new contributors feel welcome and valued. We should assure them that they will have an extra level of help with their first contribution.
 
-After a contributor has successfully completed one or two `good first issue` items, they should be ready to move on to `help wanted` items.
+After a contributor has successfully completed one or two `Good first issue` items, they should be ready to move on to `Help wanted` items.
 
-All `good first issue` items need to follow the guidelines for help wanted items in addition to meeting the following criteria:
+All `Good first issue` items need to follow the guidelines for help wanted items in addition to meeting the following criteria:
 
 - **No Barrier to Entry:** The task is something that a new contributor can tackle without advanced setup or domain knowledge. This often means improving documentation, tests or working on small, peripheral, testable bugs or features. Tasks that are similar to work that has already been completed are good candidates.
 
@@ -138,9 +139,23 @@ Maintainers are encouraged to invest the extra effort to write and shepherd alon
 - Invite them to meetings and chats
 - Rope in other maintainers for a second LGTM at the end
 - If the contributor agrees, publicly thank them on whichever channels you broadcast on, as well as in the release notes
-- Suggest related `help wanted` issues
+- Suggest related `Help wanted` issues
 
 Unless the contributors are insecure about public communication, you’re encouraged to _not_ use private messages as much as possible. Keeping communication public ensures that other people can find and benefit from your discussions in the future.
+
+#### Other Issue Types
+
+There are a variety of additonal labels that are generally self-explanatory, for example:
+
+- `Feature`
+- `Documentation`
+- `Performance`
+- `Testing`
+- `Cleanup`
+- `Security`
+- `Compatibility`
+
+A full list can always be found on the project’s [labels page](https://github.com/openpgpjs/openpgpjs/labels).
 
 ### Step 2: Prioritize the Issue
 
@@ -160,7 +175,7 @@ Important over the long term, but may not be currently staffed and/or may requir
 
 #### `priority/backlog`
 
-Would be nice, but no one has the resources to work on it. Good candidates for the `help wanted` label.
+Would be nice, but no one has the resources to work on it. Good candidates for the `Help wanted` label.
 
 ### Step 3: Assign the Work
 
@@ -172,6 +187,6 @@ It should be clear who is responsible for working on an issue once it has been t
 - **If a PR is ready for review**, use your triage meeting to find someone to review it within a reasonable amount of time. If you cannot manage a review soon, explain that to the contributor so they’re not left hanging and know what to expect.
 
 ## Release process
-// TODO: ask them
+// TODO: ask maintainers
 
 
