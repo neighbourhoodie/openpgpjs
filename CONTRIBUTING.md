@@ -184,14 +184,6 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 To create a new bug report, go to Issues, and select the Bug Report template.
 
-## Non-coding contributions
-
-This list is designed for both new contributors who are seeking a suitable entry point, as well as for existing contributors who would like to do something different. These suggestions do not involve coding directly but may require familiarity with either our codebase or OpenPGP concepts.
-
-- Documentation: typos, document features, add diagrams and visual explanations of concepts
-- Answering questions on our [Gitter](https://gitter.im/openpgpjs/openpgpjs) or our [GitHub discussions](https://github.com/openpgpjs/openpgpjs/discussions)
-- Evangelism of the project: do demos, write blog posts, talk about the project in meetups
-
 ## Communication
 
 Feel free to reach out! You can do so in our [Gitter](https://gitter.im/openpgpjs/openpgpjs) or in our [GitHub discussions](https://github.com/openpgpjs/openpgpjs/discussions)
