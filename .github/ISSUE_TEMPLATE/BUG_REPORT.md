@@ -5,9 +5,9 @@ about: Report an issue with this library
 <!--
 
 Before creating a new bug report, please take a few moments to review the following:
-- Have you search existing issues and discussions about your problem? Your problem might be already solved, and this could avoid creating duplicates
+- Have you searched existing issues and discussions about your problem? Your problem might be already solved, and this could avoid creating duplicates
 - Is this a security related bug? If so, disclose it privately following the procedure described in https://github.com/openpgpjs/openpgpjs/blob/main/SECURITY.md
-- Is this a implementation or support question? If so, open a discussion here https://github.com/openpgpjs/openpgpjs/discussions/categories/q-a 
+- Is this an implementation or support question? If so, open a discussion here https://github.com/openpgpjs/openpgpjs/discussions/categories/q-a 
 
 Thank you for your collaboration! 
 
@@ -31,7 +31,7 @@ Thank you for your collaboration!
 <!-- 
 
 Describe the bug you have encountered in detail. If suitable, include:
-- Code snippets (so we can reproduce it). As minimal and precisely as possible
+- Code snippets (so we can reproduce it). As minimal and precisely as possible. Please put these in appropriate code fences for better readability.
 - Steps required to reproduce the bug 
 - The error stack 
 

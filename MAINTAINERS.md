@@ -188,7 +188,7 @@ It should be clear who is responsible for working on an issue once it has been t
 
 ## Release process
 
-We keep it simple. We use npm's `version` command as following:
+We keep it simple. We use npm’s `version` command as following:
 
 ```sh
 npm version {major,minor,patch}

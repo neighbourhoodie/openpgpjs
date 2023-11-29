@@ -25,11 +25,11 @@ As for everything else in the project, the contributions are governed by our [Co
 
 ### Decide what you want to work on
 
-If you are looking for something to work on, we try to maintain a list of issues that should be suitable for first time contributions, they can be found tagged [`good-first-issue`](https://github.com/openpgpjs/openpgpjs/labels/good-first-issue). You can also look through our issues and pick some you like. If you're still unsure, please [reach out](#communication) and we would help you with the best of our abilities.
+If you are looking for something to work on, we try to maintain a list of issues that should be suitable for first time contributions, they can be found tagged [`good-first-issue`](https://github.com/openpgpjs/openpgpjs/labels/good-first-issue). You can also look through our issues and pick some you like. If you're still unsure, please [reach out](#communication) and we would help you to the best of our abilities.
 
 ### Notify your interest
 
-Please let us know you want to work on it so we can avoid multiple people working on the same issue. Ideally, notify us by our [Gitter](https://gitter.im/openpgpjs/openpgpjs), but expressing your interest in the issue itself is also ok.
+Please let us know you want to work on it so we can avoid multiple people working on the same issue. Ideally, notify us via our [Gitter](https://gitter.im/openpgpjs/openpgpjs), but expressing your interest in the issue itself is also ok.
 
 **Please ask first** before embarking on any significant pull request (e.g. implementing features, refactoring code), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.
 
