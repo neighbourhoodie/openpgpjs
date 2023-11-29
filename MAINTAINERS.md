@@ -187,6 +187,13 @@ It should be clear who is responsible for working on an issue once it has been t
 - **If a PR is ready for review**, use your triage meeting to find someone to review it within a reasonable amount of time. If you cannot manage a review soon, explain that to the contributor so they’re not left hanging and know what to expect.
 
 ## Release process
-// TODO: ask maintainers
 
+We keep it simple. We use npm's `version` command as following:
 
+```sh
+npm version {major,minor,patch}
+```
+
+Which will trigger the `preversion`, `version` and `postversion` scripts specified in the `package.json`. These will handle the testing, building, publish to npm and pushing to GitHub. 
+
+Additionally, we create a changelog in [GitHub releases](https://github.com/openpgpjs/openpgpjs/releases).
