@@ -40,6 +40,7 @@ While this _is_ cryptography-heavy JavaScript software, and those skills are esp
 - You can do manual tests and UI/UX evaluations of features or tools and help improve their usability
 - You can improve or maintain [our website](https://openpgpjs.org/)
 - You can evangelize for the project: present or talk about OpenPGP.js in your company, local tech meetup, youtube channel, or similar circles
+- You can answer questions on our [Gitter](https://gitter.im/openpgpjs/openpgpjs) or our [GitHub discussions](https://github.com/openpgpjs/openpgpjs/discussions)
 
 ## How do you get Started?
 
