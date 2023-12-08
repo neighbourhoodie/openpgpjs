@@ -101,21 +101,6 @@ class GenericS2K {
         this.c = bytes[i++];
         break;
 
-      case 'gnu':
-        if (util.uint8ArrayToString(bytes.subarray(i, i + 3)) === 'GNU') {
-          i += 3; // GNU
-          const gnuExtType = 1000 + bytes[i++];
-          if (gnuExtType === 1001) {
-            this.type = 'gnu-dummy';
-            // GnuPG extension mode 1001 -- don't write secret key at all
-          } else {
-            throw new UnsupportedError('Unknown s2k gnu protection mode.');
-          }
-        } else {
-          throw new UnsupportedError('Unknown s2k type.');
-        }
-        break;
-
       default:
         throw new UnsupportedError('Unknown s2k type.'); // unreachable
     }
@@ -128,9 +113,6 @@ class GenericS2K {
    * @returns {Uint8Array} Binary representation of s2k.
    */
   write(): Uint8Array {
-    if (this.type === 'gnu-dummy') {
-      return new Uint8Array([101, 0, ...util.stringToUint8Array('GNU'), 1]);
-    }
     const arr = [new Uint8Array([enums.write(enums.s2k, this.type), this.algorithm])];
 
     switch (this.type) {
@@ -143,8 +125,6 @@ class GenericS2K {
         this.salt &&arr.push(this.salt);
         arr.push(new Uint8Array([this.c]));
         break;
-      case 'gnu':
-        throw new Error('GNU s2k type not supported.');
       default:
         throw new Error('Unknown s2k type.');
     }
@@ -187,8 +167,6 @@ class GenericS2K {
           }
           break;
         }
-        case 'gnu':
-          throw new Error('GNU s2k type not supported.');
         default:
           throw new Error('Unknown s2k type.');
       }

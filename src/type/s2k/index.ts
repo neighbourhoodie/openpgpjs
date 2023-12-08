@@ -1,5 +1,6 @@
 import defaultConfig from '../../config';
 import Argon2S2K, { Argon2OutOfMemoryError } from './argon2';
+import GnuS2K from './gnu';
 import GenericS2K from './generic';
 import enums from '../../enums';
 import { UnsupportedError } from '../../packet/packet';
@@ -13,12 +14,13 @@ const allowedS2KTypesForEncryption = new Set([enums.s2k.argon2, enums.s2k.iterat
  * @returns {Object} New s2k object
  * @throws {Error} for unknown or unsupported types
  */
-export function newS2KFromType (type: number, config = defaultConfig): Argon2S2K | GenericS2K {
+export function newS2KFromType (type: number, config = defaultConfig): Argon2S2K | GnuS2K | GenericS2K {
   switch (type) {
     case enums.s2k.argon2:
       return new Argon2S2K(config);
-    case enums.s2k.iterated:
     case enums.s2k.gnu:
+      return new GnuS2K(config);
+    case enums.s2k.iterated:
     case enums.s2k.salted:
     case enums.s2k.simple:
       return new GenericS2K(type, config);
